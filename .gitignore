@@ -1,0 +1,10 @@
+todo.txt
+*.zip
+
+python
+create_layer
+__pycache__
+
+.terraform*
+terraform.tfstate*
+.tfvars
