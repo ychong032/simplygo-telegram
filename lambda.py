@@ -136,7 +136,7 @@ def get_journeys_and_total_fare(records: list[str]) -> tuple[dict[str, list[str]
                 journeys_by_date[date] = current_day_journeys
                 current_day_journeys = []
 
-    return journeys_by_date, total_fare
+    return journeys_by_date, round(total_fare, 2)
 
 def generate_summary(journeys_by_date: dict[str, list[str]], total_fare: float) -> str:
     result = ''
